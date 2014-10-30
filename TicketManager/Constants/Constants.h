@@ -9,6 +9,8 @@
 #define TESTING 0
 #define SYSTEM_VERSION_LESS_THAN(v) ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedAscending)
 
+#warning MISSING URL
+
 #define URL_LOGIN_AND_TICKETS @""
 #define URL_CHANGETICKET @""
 
