@@ -1,0 +1,40 @@
+/* 
+  Localizable.strings
+  TicketManager
+
+  Created by Javier Querol on 10/10/14.
+  Copyright (c) 2014 treeNovum. All rights reserved.
+*/
+
+"username" = "Benutzername";
+"password" = "Passwort";
+"Current Tickets" = "Tickets zu erledigen";
+"Title" = "Titel";
+"Created" = "Erstellt am";
+"Address" = "Adresse";
+"Cancel" = "Ablehnen";
+"Change Ticket" = "Erledigt";
+"Missing fields" = "Bitte Wert bei km und Stunden eintragen";
+"Name:" = "Ihr Name:";
+"Error" = "Error";
+"Ticket saved" = "Das Ticket wurde als erledigt markiert";
+"Ticket canceled" = "Das Ticket wurde zur Bearbeitung abgelehnt";
+"km:" = "km:";
+"hours:" = "Stunden:";
+
+"new" = "Neu";
+"solved" = "Bearbeitet";
+"done" = "Erledigt";
+"canceled" = "Storniert";
+"rejected" = "Abgewiesen";
+
+"your_work" = "Ihre Leistungen";
+"Comment:" = "Kommentar:";
+
+"Do you really want to set this ticket solved?" = "Wollen Sie dieses Ticket wirklich als erledigt markieren?";
+"Do you really want to reject this ticket?" = "Wollen Sie dieses Ticket wirklich ablehnen?";
+
+"All" = "Alle";
+"Today" = "Heute";
+"Tomorrow" = "Morgen";
+"7 days" = "7 Tage";
