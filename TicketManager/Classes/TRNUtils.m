@@ -27,6 +27,7 @@
 - (NSDateFormatter *)dateFormatter {
     if (!dateFormatter) {
         dateFormatter = [NSDateFormatter new];
+        [dateFormatter setTimeZone:[NSTimeZone timeZoneWithName:@"GMT"]];
         [dateFormatter setDateStyle:NSDateFormatterLongStyle];
     }
     return dateFormatter;
@@ -35,6 +36,7 @@
 - (NSDateFormatter *)timeFormatter {
     if (!timeFormatter) {
         timeFormatter = [NSDateFormatter new];
+        [dateFormatter setTimeZone:[NSTimeZone timeZoneWithName:@"GMT"]];
         [timeFormatter setTimeStyle:NSDateFormatterMediumStyle];
     }
     return timeFormatter;
@@ -54,7 +56,7 @@
     if (order.address.length>0) {
         [dic addEntriesFromDictionary:@{NSLocalizedString(@"Address", nil):order.address}];
     }
-
+    
     return dic;
 }
 

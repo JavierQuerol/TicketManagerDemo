@@ -158,25 +158,24 @@
 }
 
 - (NSArray *)itemsFilteredArray:(NSArray *)objects selectedIndex:(NSInteger)index {
-    NSDate *filterDate;
+    NSPredicate *predicate;
     switch (index) {
         case 0:
             return objects;
             break;
         case 1:
-            filterDate = [NSDate jaq_today];
+            predicate = [NSPredicate predicateWithFormat:@"creationDate <= %@ AND creationDate >= %@",[NSDate jaq_today],[NSDate jaq_beginingToday]];
             break;
         case 2:
-            filterDate = [NSDate jaq_tomorrow];
+            predicate = [NSPredicate predicateWithFormat:@"creationDate <= %@ AND creationDate >= %@",[NSDate jaq_tomorrow],[NSDate jaq_today]];
             break;
         case 3:
-            filterDate = [NSDate jaq_7days];
+            predicate = [NSPredicate predicateWithFormat:@"creationDate <= %@ AND creationDate >= %@",[NSDate jaq_7days],[NSDate jaq_beginingToday]];
             break;
         default:
             return objects;
             break;
     }
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"creationDate <= %@ AND creationDate >= %@",filterDate,[NSDate date]];
     return [objects filteredArrayUsingPredicate:predicate];
 }
 

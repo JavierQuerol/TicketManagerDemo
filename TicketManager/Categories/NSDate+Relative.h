@@ -11,6 +11,7 @@
 @interface NSDate (Relative)
 
 + (NSDate *)jaq_tomorrow;
++ (NSDate *)jaq_beginingToday;
 + (NSDate *)jaq_today;
 + (NSDate *)jaq_7days;
 

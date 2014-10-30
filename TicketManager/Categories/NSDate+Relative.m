@@ -25,6 +25,10 @@
     return [calendar dateFromComponents:dateComps];
 }
 
++ (NSDate *)jaq_beginingToday {
+    return [NSDate jaq_dateOfToday];
+}
+
 + (NSDate *)jaq_tomorrow {
     return [[NSDate jaq_dateOfToday] dateByAddingTimeInterval:SECONDS_IN_DAY*2];
 }
@@ -36,6 +40,5 @@
 + (NSDate *)jaq_7days {
     return [[NSDate jaq_dateOfToday] dateByAddingTimeInterval:SECONDS_IN_WEEK];
 }
-
 
 @end

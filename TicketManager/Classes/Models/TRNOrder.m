@@ -40,6 +40,7 @@ static NSDateFormatter *formatter = nil;
 + (NSDateFormatter *)dateFormatter {
     if (!formatter) {
         formatter = [NSDateFormatter new];
+        [formatter setTimeZone:[NSTimeZone timeZoneWithName:@"GMT"]];
         [formatter setDateFormat:@"dd.MM.yyyy HH:mm:ss"];
     }
     return formatter;
